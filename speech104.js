@@ -23,6 +23,7 @@ function mouseClicked() {
      console.log(confidence);
      console.log(objeto);
      voice.speak(objeto);
+console.log(objeto);
      objeto = null;
      if(confidence < 0.6){
      console.log ('?');
