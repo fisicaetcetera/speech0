@@ -22,7 +22,7 @@ function mouseClicked() {
      confidence = speechRec.resultConfidence;
      console.log(confidence);
      console.log(objeto);
-     voice.speak(objeto);
+     voice.speak("you said: " + objeto);
 console.log(objeto);  //new 1
      objeto = null;
      if(confidence < 0.3){
