@@ -27,12 +27,11 @@ function mouseClicked() {
      console.log(objeto);  //new 1
      objeto = null;
   } else {
-     if(confidence < 0.3){
      voice.speak("Sorry ?");
      //voice.cancel();  //new 2
      }
-     }
   }
+
  
 //"en" for English, "es" for Spanish, "fr" for French, and so on.
 
