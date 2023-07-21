@@ -27,7 +27,7 @@ console.log(objeto);  //new 1
      objeto = null;
      if(confidence < 0.3){
      voice.speak("Sorry?");
-voice.cancel();  //new 2
+//voice.cancel();  //new 2
      }
   }
  
