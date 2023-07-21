@@ -8,7 +8,7 @@
   
   function setup() {
   noCanvas();
-  lang = 'es-CO';
+  lang = 'es-Es';
 } //setup
   
 function mouseClicked() {
