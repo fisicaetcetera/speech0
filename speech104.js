@@ -26,6 +26,7 @@ function mouseClicked() {
      voice.speak("you said: " + objeto);
      console.log(objeto);  //new 1
      objeto = null;
+    voice.cancel();
   } else {
      voice.speak("Sorry ?");
      //voice.cancel();  //new 2
