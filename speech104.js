@@ -45,11 +45,7 @@ function recognize(){
   } else {
     reply = "undefined";
   }
-    
-
   }
-
-}
 
  
 //"en" for English, "es" for Spanish, "fr" for French, and so on.
