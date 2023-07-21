@@ -8,7 +8,7 @@
   
   function setup() {
   noCanvas();
-  lang = 'es';
+  lang = 'ar-SA';
 } //setup
   
 function mouseClicked() {
@@ -23,10 +23,10 @@ function mouseClicked() {
      console.log(confidence);
      console.log(objeto);
      voice.speak(objeto);
-console.log(objeto);
+console.log(objeto);  //new 1
      objeto = null;
      if(confidence < 0.6){
-     console.log ('?');
+     voice.speak("Please say it again?");
      }
   }
  
