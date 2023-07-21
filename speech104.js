@@ -8,7 +8,7 @@
   
   function setup() {
   noCanvas();
-  lang = 'en-US';
+  lang = 'es';
 } //setup
   
 function mouseClicked() {
@@ -30,5 +30,5 @@ console.log(objeto);
      }
   }
  
-
+//"en" for English, "es" for Spanish, "fr" for French, and so on.
 
