@@ -27,7 +27,7 @@ console.log(objeto);  //new 1
      objeto = null;
      if(confidence < 0.6){
      voice.speak("Please say it again?");
-       cancel();
+       voice.cancel();
      }
   }
  
