@@ -32,13 +32,13 @@ function mouseClicked() {
      objeto = null;
     //voice.cancel();
   } else {
-     voice.speak("Sorry ?");
+     voice.speak( :( "Sorry ?");
      //voice.cancel();  //new 2
      }
   }
 function recognize(){
   if (objeto == "who are you"){
-    reply = "I am enivaldo's AI.  \n He WROTE ME!";
+    reply = "I am enivaldo's AI.  \n ;) He WROTE ME!";
   } else {
     reply = ":)"
   }
