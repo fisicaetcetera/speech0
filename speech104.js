@@ -21,7 +21,8 @@ function mouseClicked() {
      console.log(speechRec);
      objeto = speechRec.resultString;
      recognize();
-    voice.speak("reply");
+    voice.speak(reply);
+    console.log(reply);
      confidence = speechRec.resultConfidence;
      console.log(confidence);
      console.log(objeto);
