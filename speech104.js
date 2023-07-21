@@ -38,7 +38,7 @@ function mouseClicked() {
   }
 function recognize(){
   if (objeto == "who are you"){
-    reply = "I am enivaldo's AI";
+    reply = "I am enivaldo's AI.  \n He WROTE ME!";
   } else {
     reply = ":)"
   }
