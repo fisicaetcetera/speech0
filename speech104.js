@@ -22,12 +22,15 @@ function mouseClicked() {
      confidence = speechRec.resultConfidence;
      console.log(confidence);
      console.log(objeto);
+  if(confidence > 0.3){
      voice.speak("you said: " + objeto);
-console.log(objeto);  //new 1
+     console.log(objeto);  //new 1
      objeto = null;
+  } else {
      if(confidence < 0.3){
      voice.speak("Sorry ?");
      //voice.cancel();  //new 2
+     }
      }
   }
  
