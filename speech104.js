@@ -25,8 +25,8 @@ function mouseClicked() {
      voice.speak(objeto);
 console.log(objeto);  //new 1
      objeto = null;
-     if(confidence < 0.6){
-     voice.speak("Please say it again?");
+     if(confidence < 0.3){
+     voice.speak("Puede repetir?");
 voice.cancel();  //new 2
      }
   }
