@@ -5,6 +5,7 @@
   let speechRec;
   let continuous = true;
   let voice;
+  let reply;
   
   function setup() {
   noCanvas();
@@ -19,6 +20,8 @@ function mouseClicked() {
   function gotSpeech() {
      console.log(speechRec);
      objeto = speechRec.resultString;
+     recognize();
+    voice.speak("reply");
      confidence = speechRec.resultConfidence;
      console.log(confidence);
      console.log(objeto);
@@ -32,6 +35,14 @@ function mouseClicked() {
      //voice.cancel();  //new 2
      }
   }
+function recognize(){
+  if (objeto == "who are you"){
+    reply = "I am enivaldo's AI";
+  } else {
+    reply = ":)"
+  }
+
+}
 
  
 //"en" for English, "es" for Spanish, "fr" for French, and so on.
