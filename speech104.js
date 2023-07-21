@@ -6,6 +6,7 @@
   let continuous = true;
   let voice;
   let reply;
+  let myName = "Cassandra";
   
   function setup() {
   noCanvas();
@@ -39,7 +40,11 @@ function mouseClicked() {
 function recognize(){
   if (objeto == "who are you"){
     reply = "I am enivaldo's AI.  \n  He WROTE ME!";
-  } 
+  } else if(objeto == "what's your name" {
+    reply = "I am Cassandra, Enivaldo's personal AI";
+  }
+
+  }
 
 }
 
