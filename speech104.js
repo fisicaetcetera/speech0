@@ -45,7 +45,7 @@ function recognize(){
   } else if (objeto == "what time is it"){
       tempo();
       reply = "it is " +  hours + "hours and " + minutes+"minutes"; 
-  } else if (objeto == "what's the date"){
+  } else if (objeto == "what day is it"){
       reply = "today is " + dia + "of month" + mes + "of " + ano;
   } else {
     reply = "undefined";
