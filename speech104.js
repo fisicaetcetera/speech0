@@ -47,7 +47,6 @@ function recognize(){
       reply = "it is " +  hours + "hours and " + minutes+"minutes"; 
   } else if (objeto == "what's the date"){
       reply = "today is " + dia + "of month" + mes + "of " + ano;
-  }
   } else {
     reply = "undefined";
   }
