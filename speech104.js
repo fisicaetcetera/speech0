@@ -39,12 +39,15 @@ function mouseClicked() {
   }
 function recognize(){
   if (objeto == "who are you"){
-    reply = "I am enivaldo's AI.  \n  He WROTE ME!";
+      reply = "I am enivaldo's AI.  \n  He WROTE ME!";
   } else if (objeto == "what's your name") {
-    reply = "I am Cassandra, Enivaldo's personal AI";
+      reply = "I am Cassandra, Enivaldo's personal AI";
   } else if (objeto == "what time is it"){
-    tempo();
-    reply = "it is " +  hours + "hours and " + minutes+"minutes"; 
+      tempo();
+      reply = "it is " +  hours + "hours and " + minutes+"minutes"; 
+  } else if (objeto == "what's the date"){
+      reply = "today is " + dia + "of month" + mes + "of " + ano;
+  }
   } else {
     reply = "undefined";
   }
