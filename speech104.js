@@ -9,7 +9,6 @@
   let myName = "Cassandra";
   let dia, mes, ano;
   let hours, minutes, seconds;
-  let 
   
   function setup() {
   noCanvas();
