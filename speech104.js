@@ -34,7 +34,7 @@ function mouseClicked() {
     //voice.cancel();
   } else {
      voice.speak( "Sorry ?");
-     //voice.cancel();  //new 2
+     voice.speak( "Can you say it again?" )
      }
   }
 function recognize(){
@@ -42,7 +42,20 @@ function recognize(){
     reply = "I am enivaldo's AI.  \n  He WROTE ME!";
   } else if (objeto == "what's your name") {
     reply = "I am Cassandra, Enivaldo's personal AI";
+  } else if (objeto == "what time is it"){
+    tempo();
+    reply = "it is " +  hours + "hours and " + minutes+"minutes"; 
   } else {
     reply = "undefined";
   }
+  }
+
+function tempo() {
+  currentTime = new Date();
+  dia = currentTime.getDate();
+  hours = currentTime.getHours();
+  minutes = currentTime.getMinutes();
+  seconds = currentTime.getSeconds();
+  mes = currentTime.getMonth() + 1;
+  ano = currentTime.getFullYear();
   }
