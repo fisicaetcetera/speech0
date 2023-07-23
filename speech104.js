@@ -36,10 +36,10 @@ function mouseClicked() {
      voice.speak("you said: " + objeto);
      
      objeto = null;
-    //voice.cancel();
+     voice.cancel();
   } else {
      voice.speak( "Sorry ?");
-     voice.speak( "Can you say it again?" )
+     voice.speak( "Can you say it again?" );
      }
   }
 function recognize(){
