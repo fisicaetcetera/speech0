@@ -50,7 +50,13 @@ function recognize(){
   } else if (objeto == "what day is it"){
       reply = "today is " + dia + " of " + mes + " f " + ano;
   } else if (objeto == "where are you from"){
-    reply = "I am from Natal , Brazil";
+    reply = "I am from Nat al , Brazil";
+  }else if (objeto == "how are you"){
+    tempo();
+    if (hours < 18) {
+      reply = "I am not feeling very well";
+    } else {
+    reply = "I feel good ";
   } else {
     reply = "undefined";
   }
