@@ -9,6 +9,7 @@
   let myName = "Cassandra";
   let dia, mes, ano;
   let hours, minutes, seconds;
+  let feeling;
   
   function setup() {
   noCanvas();
@@ -53,12 +54,10 @@ function recognize(){
     reply = "I am from Nat al , Brazil";
   }else if (objeto == "how are you"){
     tempo();
-    if (hours < 18) {
-      reply = "I am not feeling very well";
-    } else {
-    reply = "I feel good ";
+    feel();
+    reply = feeling;
   } else {
-    reply = "undefined";
+    reply = "ok";
   }
   }
 
@@ -72,3 +71,10 @@ function tempo() {
   ano = currentTime.getFullYear();
   console.log(dia , mes, ano);
   }
+function feel(){
+  if(hours < 18){
+    feeling = "i am feeling good, thank you";
+  } else {
+    feeling = "I am not in a good mood";
+  }
+}
