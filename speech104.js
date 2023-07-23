@@ -31,7 +31,12 @@ function mouseClicked() {
   speechRec.start(continuous);
   voice = new p5.Speech();
 }
-  function gotSpeech() {
+//setTimeout(function() {
+  // your code to be executed after 3 second
+  // Since it is in milliseconds units, multiply it by 1000.
+//}, seconds*1000);
+
+  setTimeout(function gotSpeech() {
      console.log(speechRec);
      objeto = speechRec.resultString;
     console.log(objeto);
@@ -50,7 +55,7 @@ function mouseClicked() {
      voice.speak( "Sorry ?");
      voice.speak( "Can you say it again?" );
      }
-  }
+  }, 3000);
 function recognize(){
   if (objeto == "who are you"){
       reply = "I am enivaldo's AI.  \n  He WROTE ME!";
