@@ -64,4 +64,5 @@ function tempo() {
   seconds = currentTime.getSeconds();
   mes = currentTime.getMonth() + 1;
   ano = currentTime.getFullYear();
+  console.log(dia , mes, ano);
   }
