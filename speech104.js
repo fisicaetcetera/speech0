@@ -3,7 +3,7 @@
 //
   let lang;
   let speechRec;
-  let continuous = true;
+  let continuous = false;
   let voice;
   let reply;
   let myName = "Cassandra";
@@ -14,6 +14,7 @@
   function setup() {
   noCanvas();
   lang = 'en-US';
+    console.log("continuous = false");
 } //setup
   
 function mouseClicked() {
