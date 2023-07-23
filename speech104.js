@@ -24,15 +24,16 @@ function mouseClicked() {
   function gotSpeech() {
      console.log(speechRec);
      objeto = speechRec.resultString;
+    console.log(objeto);
      recognize();
     voice.speak(reply);
     console.log(reply);
      confidence = speechRec.resultConfidence;
      console.log(confidence);
-     console.log(objeto);
+     
   if(confidence > 0.3){
      voice.speak("you said: " + objeto);
-     console.log(objeto);  //new 1
+     
      objeto = null;
     //voice.cancel();
   } else {
@@ -49,7 +50,7 @@ function recognize(){
       tempo();
       reply = "it is " +  hours + " hours and " + minutes+" minutes"; 
   } else if (objeto == "what day is it"){
-      reply = "today is " + dia + " of " + mes + " f " + ano;
+      reply = "today is " + dia + " of " + mes + " of " + ano;
   } else if (objeto == "where are you from"){
     reply = "I am from Nat al , Brazil";
   }else if (objeto == "how are you"){
