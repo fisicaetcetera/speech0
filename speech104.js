@@ -16,7 +16,7 @@
   lang = 'en-US';
     console.log("continuous = random");
     rnd = random(0,1);
-    if(rnd == 0){
+    if(rnd < 0.5){
       continuous = false;
     } else {
       continuous = true;
