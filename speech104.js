@@ -3,7 +3,7 @@
 //
   let lang;
   let speechRec;
-  let continuous = false;
+  let continuous;
   let voice;
   let reply;
   let myName = "Cassandra";
@@ -14,7 +14,14 @@
   function setup() {
   noCanvas();
   lang = 'en-US';
-    console.log("continuous = false");
+    console.log("continuous = random");
+    rnd = random(0,1);
+    if(rnd == 0){
+      continuous = false;
+    } else {
+      continuous = true;
+    }
+    console.log("continuous = " + continuous);
 } //setup
   
 function mouseClicked() {
@@ -36,7 +43,7 @@ function mouseClicked() {
      voice.speak("you said: " + objeto);
      
      objeto = null;
-     voice.cancel();
+     
   } else {
      voice.speak( "Sorry ?");
      voice.speak( "Can you say it again?" );
