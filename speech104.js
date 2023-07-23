@@ -18,8 +18,10 @@
     rnd = random(0,1);
     if(rnd < 0.5){
       continuous = false;
+      console.log("Cassandra is lucid now");
     } else {
       continuous = true;
+      console.log("Cassandra ok now");
     }
     console.log("continuous = " + continuous);
 } //setup
