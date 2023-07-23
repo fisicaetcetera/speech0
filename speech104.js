@@ -21,7 +21,7 @@
       console.log("Cassandra is lucid now");
     } else {
       continuous = true;
-      console.log("Cassandra ok now");
+      console.log("Cassandra unstable now");
     }
     console.log("continuous = " + continuous);
 } //setup
@@ -36,7 +36,7 @@ function mouseClicked() {
   // Since it is in milliseconds units, multiply it by 1000.
 //}, seconds*1000);
 
-  setTimeout(function gotSpeech() {
+  function gotSpeech() {
      console.log(speechRec);
      objeto = speechRec.resultString;
     console.log(objeto);
@@ -55,7 +55,7 @@ function mouseClicked() {
      voice.speak( "Sorry ?");
      voice.speak( "Can you say it again?" );
      }
-  }, 3000);
+  }
 function recognize(){
   if (objeto == "who are you"){
       reply = "I am enivaldo's AI.  \n  He WROTE ME!";
