@@ -73,8 +73,8 @@ function tempo() {
   }
 function feel(){
   if(hours < 18){
-    feeling = "i am feeling good, thank you";
-  } else {
     feeling = "I am not in a good mood";
+  } else {
+    feeling = "i am feeling good, thank you";
   }
 }
