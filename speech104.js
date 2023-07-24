@@ -15,12 +15,6 @@
   noCanvas();
   lang = 'en-US';
     introduction();
-    createP("FALE COM MINHA IA!");
-    createP("Clique o mouse nessa tela, para ativar o microfone.");
-    createP("Quando ela está de bom humor, tem que clicar a cada pergunta.");
-    createP("Quando ela está de MAU humor, o microfone fica ligado por mais tempo -");
-    createP("E ela poderá ficar toda confusa, ao ouvir a própria voz - vocês verão!");
-    createP("Ela é bem nova, ainda está aprendendo.")
     console.log("continuous = random");
     rnd = random(0,1);
     if(rnd < 0.5){
@@ -108,4 +102,12 @@ function feel(){
   } else {
     feeling = "i am feeling good, thank you";
   }
+}
+function introduction(){
+ createP("FALE COM MINHA IA!");
+    createP("Clique o mouse nessa tela, para ativar o microfone.");
+    createP("Quando ela está de bom humor, tem que clicar a cada pergunta.");
+    createP("Quando ela está de MAU humor, o microfone fica ligado por mais tempo -");
+    createP("E ela poderá ficar toda confusa, ao ouvir a própria voz - vocês verão!");
+    createP("Ela é bem nova, ainda está aprendendo.")
 }
