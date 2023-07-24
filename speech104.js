@@ -50,32 +50,39 @@ function mouseClicked() {
      
   if(confidence > 0.3){
      voice.speak("you said: " + objeto);
+    createP('You said:  " + objeto);
      
      objeto = null;
      
   } else {
      voice.speak( "Sorry ?");
+    createP('Sorry, can you say it again?');
      voice.speak( "Can you say it again?" );
      }
   }
 function recognize(){
   if (objeto == "who are you"){
       reply = "I am enivaldo's AI.  \n  He WROTE ME!";
+    createP("I am enivaldo's AI.  \n  He WROTE ME!");
   } else if (objeto == "what's your name") {
       reply = "I am Cassandra, Enivaldo's personal AI";
+    createP("I am Cassandra, Enivaldo's personal AI");
   } else if (objeto == "what time is it"){
       tempo();
       reply = "it is " +  hours + " hours and " + minutes+" minutes"; 
+    createP("it is " +  hours + " hours and " + minutes+" minutes");
   } else if (objeto == "what day is it"){
       reply = "today is " + dia + " of " + mes + " of " + ano;
+    createP("today is " + dia + " of " + mes + " of " + ano);
   } else if (objeto == "where are you from"){
     reply = "I am from Nat al , Brazil";
+    createP("I am from Natal , Brazil");
   }else if (objeto == "how are you"){
     tempo();
     feel();
     reply = feeling;
   } else {
-    reply = "feeling";
+    reply = feeling;
   }
   }
 
