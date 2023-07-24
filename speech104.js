@@ -9,7 +9,7 @@
   let myName = "Cassandra";
   let dia, mes, ano;
   let hours, minutes, seconds;
-  let feeling;
+  let feeling, humor;
   
   function setup() {
   noCanvas();
@@ -19,9 +19,11 @@
     if(rnd < 0.5){
       continuous = false;
       console.log("Cassandra is lucid now");
+      humor = true;
     } else {
       continuous = true;
       console.log("Cassandra unstable now");
+      humor = false;
     }
     console.log("continuous = " + continuous);
 } //setup
@@ -73,7 +75,7 @@ function recognize(){
     feel();
     reply = feeling;
   } else {
-    reply = "ok";
+    reply = "feeling";
   }
   }
 
@@ -88,7 +90,7 @@ function tempo() {
   console.log(dia , mes, ano);
   }
 function feel(){
-  if(hours < 18){
+  if(! humor){
     feeling = "I am not in a good mood";
   } else {
     feeling = "i am feeling good, thank you";
