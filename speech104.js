@@ -50,7 +50,7 @@ function mouseClicked() {
      
   if(confidence > 0.3){
      voice.speak("you said: " + objeto);
-    createP('You said:  " + objeto);
+    createP("You said:  " + objeto);
      
      objeto = null;
      
