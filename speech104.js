@@ -51,7 +51,7 @@ function mouseClicked() {
      confidence = speechRec.resultConfidence;
      console.log(confidence);
      
-  if(confidence > 0.3){
+  if(confidence > 0.6){
      voice.speak("you said: " + objeto);
     createP("You said:  " + objeto);
      
