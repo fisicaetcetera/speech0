@@ -14,6 +14,7 @@
   function setup() {
   noCanvas();
   lang = 'en-US';
+    introduction();
     createP("FALE COM MINHA IA!");
     createP("Clique o mouse nessa tela, para ativar o microfone.");
     createP("Quando ela está de bom humor, tem que clicar a cada pergunta.");
