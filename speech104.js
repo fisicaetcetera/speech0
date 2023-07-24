@@ -84,8 +84,10 @@ function recognize(){
     tempo();
     feel();
     reply = feeling;
+    createP(feeling);
   } else {
     reply = feeling;
+    createP(feeling);
   }
   }
 
