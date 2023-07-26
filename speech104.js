@@ -103,7 +103,7 @@ function feel(){
   if(! humor){
     feeling = "I am not in a good mood";
   } else {
-    feeling = "i am feeling good, thank you.  What about yorsel?";
+    feeling = "i am feeling good, thank you.  What about yourself?";
   }
 }
 function introduction(){
