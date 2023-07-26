@@ -82,14 +82,11 @@ function recognize(){
     reply = "I am from Nat al , Brazil";
     createP("I am from Natal , Brazil");
   }else if (objeto == "how are you"){
-    tempo();
+    //tempo();
     feel();
     reply = feeling;
     createP(feeling);
-  } else {
-    reply = feeling;
-    createP(feeling);
-  }
+  } 
   }
 
 function tempo() {
@@ -106,7 +103,7 @@ function feel(){
   if(! humor){
     feeling = "I am not in a good mood";
   } else {
-    feeling = "i am feeling good, thank you";
+    feeling = "i am feeling good, thank you.  What about yorsel?";
   }
 }
 function introduction(){
