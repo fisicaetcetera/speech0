@@ -53,11 +53,24 @@ function mouseClicked() {
      objeto = null;
      
   } else {
+    
+     voice.speak( "Sorry ?");
+     createP('Sorry');
+    voice.speak('I am not sure you said   ' + objeto);
+     voice.speak( "Can you say it again?" );
+     createP('I am not sure you said   ' + objeto);
+      createP('Can you say it again?');
+     }
+  }
+//====
+ } else {
      voice.speak( "Sorry ?");
     createP('Sorry, can you say it again?');
+    voice.speak("I am no shure you said  " + objeto);
      voice.speak( "Can you say it again?" );
      }
   }
+//====
 function recognize(){
   if (objeto == "who are you"){
       reply = "I am enivaldo's AI.  \n  He WROTE ME!";
