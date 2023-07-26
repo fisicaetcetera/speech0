@@ -60,7 +60,7 @@ function mouseClicked() {
      voice.speak( "Can you say it again?" );
      createP('I am not sure you said   ' + objeto);
       createP('Can you say it again?');
-     } //else
+     
   }  //confidence
 } // gotspeech
 
