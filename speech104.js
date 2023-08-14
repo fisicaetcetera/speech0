@@ -86,7 +86,7 @@ function recognize(){
     feel();
     reply = feeling;
     createP(feeling);
-    else {
+  }else {
     
      voice.speak( "Sorry ?");
      createP('Sorry');
@@ -95,9 +95,8 @@ function recognize(){
      createP('I am not sure you said   ' + objeto);
      createP('Can you say it again?');
      
-  }  //confidence
-  } 
-  }
+  }  //if objeto
+  } //recognize function
 
 function tempo() {
   currentTime = new Date();
