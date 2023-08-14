@@ -48,7 +48,7 @@ function mouseClicked() {
      
   if(confidence > 0.6){
      voice.speak("you said: " + objeto);
-    createP("You said:  " + objeto);
+     createP("You said:  " + objeto);
      
      objeto = null;
      
@@ -56,10 +56,10 @@ function mouseClicked() {
     
      voice.speak( "Sorry ?");
      createP('Sorry');
-    voice.speak('I am not sure you said   ' + objeto);
+     voice.speak('I am not sure you said   ' + objeto);
      voice.speak( "Can you say it again?" );
      createP('I am not sure you said   ' + objeto);
-      createP('Can you say it again?');
+     createP('Can you say it again?');
      
   }  //confidence
 } // gotspeech
@@ -67,14 +67,14 @@ function mouseClicked() {
 function recognize(){
   if (objeto == "who are you"){
       reply = "I am enivaldo's AI.  \n  He WROTE ME!";
-    createP("I am enivaldo's AI.  \n  He WROTE ME!");
+      createP("I am enivaldo's AI.  \n  He WROTE ME!");
   } else if (objeto == "what's your name") {
       reply = "I am Cassandra, Enivaldo's personal AI";
-    createP("I am Cassandra, Enivaldo's personal AI");
+      createP("I am Cassandra, Enivaldo's personal AI");
   } else if (objeto == "what time is it"){
       tempo();
-      reply = "it is " +  hours + " hours and " + minutes+" minutes"; 
-    createP("it is " +  hours + " hours and " + minutes+" minutes");
+      reply = "It is " +  hours + " hours and " + minutes+" minutes"; 
+      createP("it is " +  hours + " hours and " + minutes+" minutes");
   } else if (objeto == "what day is it"){
       reply = "today is " + dia + " of " + mes + " of " + ano;
     createP("today is " + dia + " of " + mes + " of " + ano);
@@ -101,9 +101,9 @@ function tempo() {
   }
 function feel(){
   if(! humor){
-    feeling = "I am not in a good mood";
+    feeling = "I am not in a good mood. You should reload the program!";
   } else {
-    feeling = "i am feeling good, thank you.  What about yourself?";
+    feeling = "I am feeling good, thank you.  What about yourself?";
   }
 }
 function introduction(){
@@ -112,5 +112,7 @@ function introduction(){
     createP("Quando ela está de bom humor, tem que clicar a cada pergunta.");
     createP("Quando ela está de MAU humor, o microfone fica ligado por mais tempo -");
     createP("E ela poderá ficar toda confusa, ao ouvir a própria voz - vocês verão!");
-    createP("Ela é bem nova, ainda está aprendendo.")
+    createP("Ela é bem nova, ainda está aprendendo.");
+  createP("EXEMPLOS: who are you?, how are you?, what is you name?, what time is it?,");
+  createP("where are you from?, what day is is?");
 }
