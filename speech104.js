@@ -86,6 +86,16 @@ function recognize(){
     feel();
     reply = feeling;
     createP(feeling);
+    else {
+    
+     voice.speak( "Sorry ?");
+     createP('Sorry');
+     voice.speak('I am not sure you said   ' + objeto);
+     voice.speak( "Can you say it again?" );
+     createP('I am not sure you said   ' + objeto);
+     createP('Can you say it again?');
+     
+  }  //confidence
   } 
   }
 
