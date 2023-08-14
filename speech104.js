@@ -81,20 +81,17 @@ function recognize(){
   } else if (objeto == "where are you from"){
     reply = "I am from Nat al , Brazil";
     createP("I am from Natal , Brazil");
-  }else if (objeto == "how are you"){
-    //tempo();
+  } else if (objeto == "how are you"){
     feel();
     reply = feeling;
     createP(feeling);
-  }else {
-    
+  } else {
      voice.speak( "Sorry ?");
      createP('Sorry');
      voice.speak('I am not sure you said   ' + objeto);
      voice.speak( "Can you say it again?" );
      createP('I am not sure you said   ' + objeto);
      createP('Can you say it again?');
-     
   }  //if objeto
   } //recognize function
 
