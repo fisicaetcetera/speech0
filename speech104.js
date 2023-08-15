@@ -76,6 +76,7 @@ function recognize(){
       reply = "It is " +  hours + " hours and " + minutes+" minutes"; 
       createP("it is " +  hours + " hours and " + minutes+" minutes");
   } else if (objeto == "what day is it"){
+      tempo();
       reply = "today is " + dia + " of " + mes + " of " + ano;
     createP("today is " + dia + " of " + mes + " of " + ano);
   } else if (objeto == "where are you from"){
