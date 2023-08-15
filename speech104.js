@@ -48,8 +48,8 @@ function mouseClicked() {
      console.log(confidence);
      
   if(confidence > 0.6){
-     voice.speak("you said: " + objeto);
-     createP("You said:  " + objeto);
+     voice.speak("I think you said" + objeto);
+     createP("I think you said:  '+ objeto+ "'");
      
      objeto = null;
      
@@ -57,7 +57,7 @@ function mouseClicked() {
     
      voice.speak( "Sorry ?");
      createP('Sorry');
-     voice.speak('I am not sure you said   ' + objeto);
+     voice.speak('I do not know what' + objeto + 'means!');
      voice.speak( "Can you say it again?" );
      createP('I am not sure you said   ' + objeto);
      createP('Can you say it again?');
