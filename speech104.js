@@ -27,7 +27,7 @@
       humor = false;
     }
     console.log("continuous = " + continuous);
-    createP("Versão 08151025");
+    createP("Versão 08151043");
 } //setup
   
 function mouseClicked() {
@@ -49,7 +49,7 @@ function mouseClicked() {
      
   if(confidence > 0.6){
      voice.speak("I think you said" + objeto);
-     createP("I think you said:  '+ objeto+ "'");
+     createP("I think you said:  " + objeto+ "'");
      
      objeto = null;
      
