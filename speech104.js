@@ -27,6 +27,7 @@
       humor = false;
     }
     console.log("continuous = " + continuous);
+    createP("Versão 08151025");
 } //setup
   
 function mouseClicked() {
